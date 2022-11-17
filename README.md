@@ -46,7 +46,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
   SpaceX - Falcon 9  
   
-  <img width="350" alt="spacex2" src="https://user-images.githubusercontent.com/74242736/202445257-25782d95-664e-4e7c-9d14-d719395328b7.png">
+  <img width="350" alt="Schermafbeelding 2022-11-17 om 13 26 31" src="https://user-images.githubusercontent.com/74242736/202446085-dbda8f29-a970-4667-bf0d-9979a2d4ad86.png">
  
 </details>
 
