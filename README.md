@@ -13,7 +13,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Wie ben ik</summary>
 
   ### Auteur:
   Joep Klaassen
@@ -33,14 +33,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Wat ga ik doen tijdens dit vak</summary>
 
   ### Je opdracht:
-  (https://www.spacex.com/)
+  https://www.spacex.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img width="350" alt="spacex1" src="https://user-images.githubusercontent.com/74242736/202444714-a50f7630-8924-4a29-bbc7-8d57f188f6fb.png">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
