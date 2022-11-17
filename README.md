@@ -41,12 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   SpaceX - Home
   
-  <img width="350" alt="spacex1" src="https://user-images.githubusercontent.com/74242736/202444714-a50f7630-8924-4a29-bbc7-8d57f188f6fb.png">
+  <img width="350" src="https://user-images.githubusercontent.com/74242736/202444714-a50f7630-8924-4a29-bbc7-8d57f188f6fb.png">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   SpaceX - Falcon 9  
   
-  <img width="350" alt="Schermafbeelding 2022-11-17 om 13 28 22" src="https://user-images.githubusercontent.com/74242736/202446446-ab28194f-6ad7-4cf9-aafa-07cc6eb2922a.png">
+  <img width="350" src="https://user-images.githubusercontent.com/74242736/202559346-849e3c0d-1816-4891-9336-e95267332a5c.png">
  
 </details>
 
