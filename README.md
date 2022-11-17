@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Joep Klaassen
 
   #### Je startniveau:
-  Zwarte piste
+  Rode piste
 
   #### Je focus:
   Extra aandacht voor de surface laag
