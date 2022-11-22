@@ -67,9 +67,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving
+  
+  * Scrollt niet mee met tab elementen, waardoor je niet ziet wat je geselecteerd hebt buiten beeld.
+  * Selecteert het menu wel via tab, alleen is het niet mogelijk het hamburger menu uit te klappen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ 
+  Hier een omschrijving van hoe het opgelost kan worden
+  
+  * Tabindex toevoegen aan HTML elementen die niet geselecteerd kunnen worden.
 
 
   #### Motoriek (shocks, elastiekjes)
