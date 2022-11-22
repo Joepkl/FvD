@@ -62,9 +62,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+  * Website werkt prima met screenreader, alleen hamburger menu wordt niet goed geselecteerd en is niet duidelijk voor de gebruiker.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  
+  * Met een tabindex is het mogelijk om dit wel te selecteren met een screenreader.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving
@@ -80,14 +83,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  * Omdat het een vrij minimalistische website (als in hoeveelheid content in beeld) is ging het vrij goed met de aandacht bij de content houden. 
+  * Navigatie op de website ging ook prima. Het is voornamelijk naar beneden scrollen om de content te bekijken.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  * De website reageert niet op light en dark mode ingesteld door de gebruiker. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
 
 </details>
 
