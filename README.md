@@ -13,16 +13,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Wie ben ik</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Joep Klaassen
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Rode piste
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Extra aandacht voor de surface laag
  
 </details>
 
@@ -33,18 +33,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Wat ga ik doen tijdens dit vak</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.spacex.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  SpaceX - Home
+  
+  <img width="350" src="https://user-images.githubusercontent.com/74242736/202444714-a50f7630-8924-4a29-bbc7-8d57f188f6fb.png">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  SpaceX - Falcon 9  
+  
+  <img width="350" src="https://user-images.githubusercontent.com/74242736/202559782-42f048cc-e44c-4b6e-a854-8222b957edb4.png">
  
 </details>
 
@@ -60,26 +62,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+  * Website werkt prima met screenreader, alleen hamburger menu wordt niet goed geselecteerd en is niet duidelijk voor de gebruiker.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  
+  * Met een tabindex is het mogelijk om dit wel te selecteren met een screenreader.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Hier korte omschrijving
+  
+  * Scrollt niet mee met tab elementen, waardoor je niet ziet wat je geselecteerd hebt buiten beeld.
+  * Selecteert het menu wel via tab, alleen is het niet mogelijk het hamburger menu uit te klappen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ 
+  Hier een omschrijving van hoe het opgelost kan worden
+  
+  * Tabindex toevoegen aan HTML elementen die niet geselecteerd kunnen worden.
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  * Omdat het een vrij minimalistische website (als in hoeveelheid content in beeld) is ging het vrij goed met de aandacht bij de content houden. 
+  * Navigatie op de website ging ook prima. Het is voornamelijk naar beneden scrollen om de content te bekijken.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  * De website reageert niet op light en dark mode ingesteld door de gebruiker. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
 
 </details>
 
