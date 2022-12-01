@@ -137,20 +137,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Afbeeldingen postioneren
   - Carousel
     
-  | Joep           | Sten               | Michelle     | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | Nummers optellen animatie| en dit             | en ik dit    | en dan ik dat    |
-  |   | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |     | ...                | ...          | ...              |
+  | Joep                       | Sten               | Michelle                    | student 4        |
+  | ---                      | ---                | ---                           | ---              |
+  | Nummers optellen animatie| HTML checken        | Afbeeldingen positioneren    | en dan ik dat    |
+  |                           | Carousel           | Hamburger menu               | dit wil ik zeker |
+  |                           |                   |                                |             |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Sten heeft een idee hoe het carousel moet en gaat er mee door.
+  - Michelle alle HTML gecheckt, en ::before gebruiken.
+  - 
+  - 
 
 </details>
 
