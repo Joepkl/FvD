@@ -149,8 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Sten heeft een idee hoe het carousel moet en gaat er mee door.
   - Michelle alle HTML gecheckt, en ::before gebruiken.
-  - 
-  - 
+  - Mag geen classes en id gebruiken
 
 </details>
 
@@ -240,6 +239,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
+  
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
