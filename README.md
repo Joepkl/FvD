@@ -150,6 +150,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Sten heeft een idee hoe het carousel moet en gaat er mee door.
   - Michelle alle HTML gecheckt, en ::before gebruiken.
   - Mag geen classes en id gebruiken
+  - h1 boven aan website, h2 daarna enzovoort. (met css positie omwissenel flexbox: order;)
 
 </details>
 
