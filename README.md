@@ -116,10 +116,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### dynamisch deel (menu): 
-  <img width="200" alt="Schermafbeelding 2022-12-06 om 16 19 44" src="https://user-images.githubusercontent.com/74242736/205951547-51583351-2901-4964-a9ef-9e2f8a5632af.png">
+  <img width="200" alt="Schermafbeelding 2022-12-06 om 16 23 06" src="https://user-images.githubusercontent.com/74242736/205952385-6bc2836f-1bcd-43df-b5a1-35ed6ff24928.png">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
