@@ -111,12 +111,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### De gehele pagina: 
-<img width="200" alt="Schermafbeelding 2022-12-06 om 16 27 16" src="https://user-images.githubusercontent.com/74242736/205953420-f9b22e85-6737-47ee-9482-7902f6a6c3f3.png">
+  ### De gehele pagina:
+    <img width="200" alt="Schermafbeelding 2022-12-06 om 16 23 06" src="https://user-images.githubusercontent.com/74242736/205952385-6bc2836f-1bcd-43df-b5a1-35ed6ff24928.png">
+
 
 
   ### dynamisch deel (menu): 
-  <img width="200" alt="Schermafbeelding 2022-12-06 om 16 23 06" src="https://user-images.githubusercontent.com/74242736/205952385-6bc2836f-1bcd-43df-b5a1-35ed6ff24928.png">
+<img width="200" alt="Schermafbeelding 2022-12-06 om 16 27 16" src="https://user-images.githubusercontent.com/74242736/205953420-f9b22e85-6737-47ee-9482-7902f6a6c3f3.png">
 
 
 </details>
