@@ -112,7 +112,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### De gehele pagina:
-    <img width="200" alt="Schermafbeelding 2022-12-06 om 16 23 06" src="https://user-images.githubusercontent.com/74242736/205952385-6bc2836f-1bcd-43df-b5a1-35ed6ff24928.png">
+<img width="200" alt="Schermafbeelding 2022-12-06 om 16 33 24" src="https://user-images.githubusercontent.com/74242736/205954936-c5701ca9-df8a-456b-815e-07c88fed022f.png">
 
 
 
