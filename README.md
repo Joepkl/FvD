@@ -41,17 +41,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   SpaceX - Home
   
-  <img width="350" alt="mobiel1" src="https://user-images.githubusercontent.com/74242736/205944736-394731b3-5cf9-477b-9383-a00f12bdf773.png">
+  <img width="200" alt="mobiel1" src="https://user-images.githubusercontent.com/74242736/205944736-394731b3-5cf9-477b-9383-a00f12bdf773.png">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   SpaceX - Hakuto-R 
   
-  <img width="350" alt="mobiel3 cancelled" src="https://user-images.githubusercontent.com/74242736/205944884-56034a61-3db3-4634-b861-8507a91739b4.png">
+  <img width="200" alt="mobiel3 cancelled" src="https://user-images.githubusercontent.com/74242736/205944884-56034a61-3db3-4634-b861-8507a91739b4.png">
   
   #### Screenshot(s) van de derde pagina (small screen):
   SpaceX - Falcon 9 
  
-  ![mobiel2](https://user-images.githubusercontent.com/74242736/205945276-588660d4-f718-42aa-8df1-fb9beb8dcdc9.png)
+  <img width="200" alt="mobiel3 cancelled" src="https://user-images.githubusercontent.com/74242736/205945276-588660d4-f718-42aa-8df1-fb9beb8dcdc9.png">   
  
 </details>
 
