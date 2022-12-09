@@ -1,0 +1,602 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: d-din;
+    src: url(../fonts/D-DIN.otf);
+}
+
+@font-face {
+    font-family: d-din-bold;
+    src: url(../fonts/D-DIN-Bold.otf);
+}
+
+body{
+    font-family: d-din;
+}
+
+
+
+
+/* Navigatie */
+header{
+    height: 3em;
+    width: 100%;
+    padding-top: 0.94em;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+nav{
+    position: relative;
+    height: 100%;
+}
+
+nav > div:first-of-type > a{
+    display: block;
+    margin: 0 auto;
+}
+
+nav a img{
+    width: 9.4em;
+    transform: translateX(4vw);
+}
+
+/* Hamburger menu */
+nav > button{
+    position: absolute;
+    right: 1.3em;
+    top: 0.8em;
+    background-color: transparent;
+    border: none;
+}
+
+nav > button div{
+    position: relative;
+    width: 1.2em;
+    /* height: 0.75em; */
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 999;
+}
+
+nav > button div span{
+    display: block;
+    position: absolute;
+    height: 0.15em;
+    width: 100%;
+    background-color: white;
+    transition: .25s ease-in-out;
+}
+
+nav > button div span:nth-of-type(1){
+    top: 0;
+}
+
+nav > button div span:nth-of-type(2){
+    top: 0.3em;
+}
+
+nav > button div span:nth-of-type(3){
+    top: 0.6em;
+}
+
+
+/* Open menu animatie */
+nav > button div.open span:nth-of-type(2){
+    opacity: 0;
+}
+
+nav > button div.open span:nth-of-type(1){
+    transform: rotate(45deg);
+    transform-origin: left center;
+    top: -0.15em;
+}
+
+nav > button div.open span:nth-of-type(3){
+    transform: rotate(-45deg);
+    transform-origin: left center;
+    top: 0.7em;
+}
+
+
+/* Nav items sidebar*/
+nav > ul{
+    background-color: black;
+    width: 0em;
+    height: 100vh;
+    margin-left: auto;
+    transition: .2s ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    z-index: 99;
+}
+
+nav > ul li:nth-of-type(1){
+    margin-top: 1.56em;
+}
+
+nav > ul li{
+    list-style: none;
+    width: fit-content;
+    margin-right: .5em;
+    margin-top: 1.5em;
+    white-space: nowrap;
+    position: relative;
+}
+
+nav > ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -0.75em;
+    right: .7em;
+    width: 15.625em;
+    height: 0.0625em;
+    background-color: #252525;
+    opacity: 0;
+}
+
+nav > ul li a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0; 
+    padding: 0.75em;
+    font-weight: 500;
+}
+
+nav > ul li a:hover{
+    color: darkgrey;
+}
+
+nav > ul.open2{
+    width: 20em;
+    transition: .5s;
+    z-index: 99;
+}
+
+
+/* Nav sidebar verschijnen animatie*/
+ul.open2 li a, ul.open2 li::after{
+    opacity: .8;
+}
+
+ul.open2 li:nth-of-type(1) a, nav > ul li:nth-of-type(1)::after{
+    transition: opacity 2.5s, color .5s;
+}
+
+ul.open2 li:nth-of-type(2) a, nav > ul li:nth-of-type(2)::after{
+    transition: opacity 2.9s, color .5s;
+}
+
+ul.open2 li:nth-of-type(3) a, nav > ul li:nth-of-type(3)::after{
+    transition: opacity 3.4s, color .5s;
+}
+
+ul.open2 li:nth-of-type(4) a, nav > ul li:nth-of-type(4)::after{
+    transition: opacity 3.8s, color .5s;
+}
+
+ul.open2 li:nth-of-type(5) a, nav > ul li:nth-of-type(5)::after{
+    transition: opacity 4.2s, color .5s;
+}
+
+ul.open2 li:nth-of-type(6) a, nav > ul li:nth-of-type(6)::after{
+    transition: opacity 4.6s, color .5s;
+}
+
+ul.open2 li:nth-of-type(7) a, nav > ul li:nth-of-type(7)::after{
+    transition: opacity 5s, color .5s;
+}
+
+ul.open2 li:nth-of-type(8) a, nav > ul li:nth-of-type(8)::after{
+    transition: opacity 5.4s, color .5s;
+}
+
+ul.open2 li:nth-of-type(9) a, nav > ul li:nth-of-type(9)::after{
+    transition: opacity 5.8s, color .5s;
+}
+
+ul.open2 li:nth-of-type(10) a, nav > ul li:nth-of-type(10)::after{
+    transition: opacity 6.2s, color .5s;
+}
+
+ul.open2 li:nth-of-type(11) a, nav > ul li:nth-of-type(11)::after{
+    transition: opacity 6.6s, color .5s;
+}
+
+ul.open2 li:nth-of-type(12) a, nav > ul li:nth-of-type(12)::after{
+    transition: opacity 7.1s, color .5s;
+}
+
+
+/* Nav items (desktop) */
+nav > div:nth-of-type(1){
+    display: flex;
+    height: 100%;
+}
+
+nav > div:nth-of-type(1) ul{
+    display: none;
+    list-style: none;
+    gap: 20px;
+    margin-left: 1em;
+    margin-top: 1.7em;
+    margin: .7em 0 0 1em;
+    height: 100%;
+}
+
+nav > div:nth-of-type(1) ul li{
+    white-space: nowrap;
+}
+
+nav > div:nth-of-type(1) ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: .98em;
+}
+
+nav > div:nth-of-type(1) ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -.1em;
+    left: 0;
+    background-color: white;
+    height: .07em;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .2s ease-in-out;
+}
+
+nav > div:nth-of-type(1) ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Main */
+main section:nth-of-type(1){
+    height: 100vh;
+    background-image: url(../images/f9_feature.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+main section:nth-of-type(1) > div{
+    text-align: center;
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+main section{
+    background-color: black;
+}
+
+h1{
+    font-family: d-din-bold;
+    font-size: 3em;
+    color: white;
+    margin-bottom: .2em;
+}
+
+h2{
+    font-family: d-din;
+    font-size: 1.8em;
+    color: white;
+    width: 60vw;
+    transform: translateX(-15vw);
+}
+
+h3{
+    font-size: 2.5em;
+    letter-spacing: .05em;
+    color: white;
+}
+
+p{
+    font-size: 1em;
+    color: white;
+}
+
+
+/* Total landings, reflights en launches */
+main section:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5em 1.3em 5em 1.3em;
+}
+
+main section:nth-of-type(2) div {
+    width: 25vw;
+    text-align: center;
+}
+
+
+/* Rocket info paragraph & img */
+main section:nth-of-type(3){
+    height: 153vh;
+    position: relative;
+}
+
+main section:nth-of-type(3) div:nth-of-type(1){
+    background-image: url(../images/WebsiteF9Fairings.webp);
+    background-size: cover;
+    background-position-x: 30%;
+    height: 40%;
+    position: sticky;
+    top: 3em;
+}
+
+main section:nth-of-type(3) > p:first-of-type{
+    position: absolute;
+    width: 80vw;
+    margin: 0 10vw;
+    top: 15em;
+    line-height: 1.8em;
+}
+
+
+/* Falcon 9 overview list */
+main section:nth-of-type(3) > p:nth-of-type(2){
+    position: absolute;
+    top: 50em;
+    left: 1.3em;
+    font-size: 1.3em;
+}
+
+h4{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 33.3em;
+    left: .8em;
+}
+
+main section:nth-of-type(3) div:nth-of-type(2){
+    position: absolute;
+    top: 71em;
+    left: 1.8em;
+    display: flex;
+    width: calc(100vw - 3.5em);
+}
+
+main section:nth-of-type(3) ul{
+    list-style: none;
+    width: 50%;
+}
+
+main section:nth-of-type(3) ul li{
+    position: relative;
+    color: white;
+    font-size: 1em;
+    font-family: d-din-bold;
+    line-height: 3em;
+    white-space: nowrap;
+}
+
+main section:nth-of-type(3) ul:first-of-type li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #252525;
+    width: calc(100vw - 1.3em - 2.3em);
+    height: .12em;
+}
+
+main section:nth-of-type(3) ul:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+main section:nth-of-type(3) button{
+    position: absolute;
+    font-family: d-din-bold;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+}
+
+main section:nth-of-type(3) button:first-of-type{
+    top: 44.5em;
+    right: 2.3em;
+    color: #252525;
+}
+
+main section:nth-of-type(3) button:nth-of-type(2){
+    top: 44.5em;
+    right: 1.3em;
+    color: white;
+}
+
+
+/* Video falcon 9 */
+main section:nth-of-type(4) iframe{
+    width: 100%;
+    height: calc(100vh - 3em);
+}
+
+
+
+
+/* Footer */
+footer img{
+    width: 6em;
+    margin: 0 auto;
+    padding: 2em 0 1em 0;
+    display: block;
+}
+
+footer{
+    width: 100vw;
+    height: 8em;
+    background-color: black;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    margin: 0 .7em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: darkgrey;
+    transition: color .5s;
+}
+
+
+
+
+
+
+
+
+/* Breakpoint fixes*/
+@media (min-width: 600px) {
+    nav > button{
+        right: 3em;
+    }
+    nav > ul li{
+        margin-right: 2em;
+    }
+    nav > ul li::after{
+        width: 14em;
+    }
+    main section:nth-of-type(3) div:nth-of-type(1){
+        height: 45%;
+    }
+}
+
+@media (min-width: 960px){
+    nav a img{
+        transform: translateX(0vw);
+        margin: 0em auto 0 3em;
+        width: 13em;
+    }
+    header{
+        height: 3em;
+    }
+    nav > div:nth-of-type(1) ul{
+        display: flex;
+    }
+    nav > div:nth-of-type(1) ul li:nth-of-type(7){
+        display: none;
+    }
+    nav > div:nth-of-type(1) ul li:nth-of-type(8){
+        display: none;
+    }
+    nav > button{
+        top: 1.1em;
+    }
+    nav > ul{
+        margin-top: -0.05em;
+    }
+    nav > ul li:nth-of-type(-n+6){
+        display: none;
+    }
+    nav > ul.open2 li:nth-of-type(7) a, nav > ul li:nth-of-type(7)::after{
+        transition: opacity 2.5s, color .5s;
+    }
+    nav > ul.open2 li:nth-of-type(8) a, nav > ul li:nth-of-type(8)::after{
+        transition: opacity 2.8s, color .5s;
+    }
+    
+    nav > ul.open2 li:nth-of-type(9) a, nav > ul li:nth-of-type(9)::after{
+        transition: opacity 3.1s, color .5s;
+    }
+    
+    nav > ul.open2 li:nth-of-type(10) a, nav > ul li:nth-of-type(10)::after{
+        transition: opacity 3.4s, color .5s;
+    }
+    
+    nav > ul.open2 li:nth-of-type(11) a, nav > ul li:nth-of-type(11)::after{
+        transition: opacity 3.7s, color .5s;
+    }
+    
+    nav > ul.open2 li:nth-of-type(12) a, nav > ul li:nth-of-type(12)::after{
+        transition: opacity 4.0s, color .5s;
+    }
+    nav > div:first-of-type > a{
+        margin: 0;
+    }
+    main section > div{
+        left: 3em;
+    }
+    footer{
+        height: 5em;
+    }
+    footer > div{
+        display: flex;
+        justify-content: center;
+    }
+    footer > div ul{
+        margin: 1.9em 0 0 1em;
+    }
+    footer img{
+        margin: 0;
+    }
+    h1{
+        font-size: 5.5em;
+    }
+    h2{
+        width: 100%;
+        transform: translateX(0);
+        font-size: 1.3em;
+    }
+}
+
+/* Breakpoint fixes Falcon 9 */
+@media (min-width: 960px){
+    main section:nth-of-type(3) {
+        height: 175vh;
+    }
+    main section:nth-of-type(3) div:nth-of-type(2), main section:nth-of-type(3) ul:first-of-type li::after{
+        width: calc(50vw - 3.5em);
+    }
+    main section:nth-of-type(3) div:nth-of-type(1){
+        background-position-x: 10%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 1080px){
+    nav > div:nth-of-type(1) ul li:nth-of-type(7){
+        display: block;
+        position: absolute;
+        right: 5.3em;
+    }
+    nav > ul li:last-of-type{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    nav > div:nth-of-type(1) ul li:nth-of-type(8){
+        display: block;
+    }
+   nav > ul li:nth-of-type(7){
+       display: none;
+   }
+}

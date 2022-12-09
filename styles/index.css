@@ -14,7 +14,6 @@
 }
 
 body{
-    background-color: lightgrey;
     font-family: d-din;
 }
 
@@ -35,69 +34,74 @@ nav{
     height: 100%;
 }
 
+nav > div:first-of-type > a{
+    display: block;
+    margin: 0 auto;
+}
+
 nav a img{
     width: 9.4em;
-    margin: 0 auto;
-    display: block;
     transform: translateX(4vw);
 }
 
 /* Hamburger menu */
-nav div#containerHamburger{
+nav > button{
     position: absolute;
-    right: 1.125em;
-    top: 0.625em;
+    right: 1.3em;
+    top: 0.8em;
+    background-color: transparent;
+    border: none;
 }
 
-nav div#hamburgerMenu{
+nav > button div{
     position: relative;
-    width: 1em;
-    height: 0.75em;
+    width: 1.2em;
+    /* height: 0.75em; */
     margin-left: auto;
     cursor: pointer;
     z-index: 999;
 }
 
-div#hamburgerMenu span{
+nav > button div span{
     display: block;
     position: absolute;
-    height: 0.125em;
+    height: 0.15em;
     width: 100%;
     background-color: white;
     transition: .25s ease-in-out;
 }
 
-div#hamburgerMenu span:nth-of-type(1){
+nav > button div span:nth-of-type(1){
     top: 0;
 }
 
-div#hamburgerMenu span:nth-of-type(2){
-    top: 0.25em;
+nav > button div span:nth-of-type(2){
+    top: 0.3em;
 }
 
-div#hamburgerMenu span:nth-of-type(3){
-    top: 0.5em;
+nav > button div span:nth-of-type(3){
+    top: 0.6em;
 }
 
 /* Open menu animatie */
-div#hamburgerMenu.open span:nth-of-type(2){
+nav > button div.open span:nth-of-type(2){
     opacity: 0;
 }
 
-div#hamburgerMenu.open span:nth-of-type(1){
+nav > button div.open span:nth-of-type(1){
     transform: rotate(45deg);
     transform-origin: left center;
-    top: -0.094em;
+    top: -0.15em;
 }
 
-div#hamburgerMenu.open span:nth-of-type(3){
+nav > button div.open span:nth-of-type(3){
     transform: rotate(-45deg);
     transform-origin: left center;
-    top: 0.625em;
+    top: 0.7em;
 }
 
 /* Nav items sidebar*/
-ul#navItems{
+nav > ul{
     background-color: black;
     width: 0em;
     height: 100vh;
@@ -111,11 +115,11 @@ ul#navItems{
     z-index: 99;
 }
 
-ul#navItems li:nth-of-type(1){
+nav > ul li:nth-of-type(1){
     margin-top: 1.56em;
 }
 
-ul#navItems li{
+nav > ul li{
     list-style: none;
     width: fit-content;
     margin-right: .5em;
@@ -124,7 +128,7 @@ ul#navItems li{
     position: relative;
 }
 
-ul#navItems li::after{
+nav > ul li::after{
     content: '';
     position: absolute;
     bottom: -0.75em;
@@ -135,7 +139,7 @@ ul#navItems li::after{
     opacity: 0;
 }
 
-ul#navItems li a{
+nav > ul li a{
     text-decoration: none;
     color: #fff;
     opacity: 0; 
@@ -143,76 +147,76 @@ ul#navItems li a{
     font-weight: 500;
 }
 
-ul#navItems li a:hover{
+nav > ul li a:hover{
     color: darkgrey;
 }
 
-ul#navItems.open2{
+nav > ul.open2{
     width: 20em;
     transition: .5s;
     z-index: 99;
 }
 
-/* Nav items verschijnen animatie*/
-ul#navItems.open2 li a, ul#navItems li::after{
+/* Nav sidebar verschijnen animatie*/
+ul.open2 li a, ul.open2 li::after{
     opacity: .8;
 }
 
-ul#navItems.open2 li:nth-of-type(1) a, ul#navItems li:nth-of-type(1)::after{
+ul.open2 li:nth-of-type(1) a, nav > ul li:nth-of-type(1)::after{
     transition: opacity 2.5s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(2) a, ul#navItems li:nth-of-type(2)::after{
+ul.open2 li:nth-of-type(2) a, nav > ul li:nth-of-type(2)::after{
     transition: opacity 2.9s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(3) a, ul#navItems li:nth-of-type(3)::after{
+ul.open2 li:nth-of-type(3) a, nav > ul li:nth-of-type(3)::after{
     transition: opacity 3.4s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(4) a, ul#navItems li:nth-of-type(4)::after{
+ul.open2 li:nth-of-type(4) a, nav > ul li:nth-of-type(4)::after{
     transition: opacity 3.8s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(5) a, ul#navItems li:nth-of-type(5)::after{
+ul.open2 li:nth-of-type(5) a, nav > ul li:nth-of-type(5)::after{
     transition: opacity 4.2s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(6) a, ul#navItems li:nth-of-type(6)::after{
+ul.open2 li:nth-of-type(6) a, nav > ul li:nth-of-type(6)::after{
     transition: opacity 4.6s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(7) a, ul#navItems li:nth-of-type(7)::after{
+ul.open2 li:nth-of-type(7) a, nav > ul li:nth-of-type(7)::after{
     transition: opacity 5s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(8) a, ul#navItems li:nth-of-type(8)::after{
+ul.open2 li:nth-of-type(8) a, nav > ul li:nth-of-type(8)::after{
     transition: opacity 5.4s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(9) a, ul#navItems li:nth-of-type(9)::after{
+ul.open2 li:nth-of-type(9) a, nav > ul li:nth-of-type(9)::after{
     transition: opacity 5.8s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(10) a, ul#navItems li:nth-of-type(10)::after{
+ul.open2 li:nth-of-type(10) a, nav > ul li:nth-of-type(10)::after{
     transition: opacity 6.2s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(11) a, ul#navItems li:nth-of-type(11)::after{
+ul.open2 li:nth-of-type(11) a, nav > ul li:nth-of-type(11)::after{
     transition: opacity 6.6s, color .5s;
 }
 
-ul#navItems.open2 li:nth-of-type(12) a, ul#navItems li:nth-of-type(12)::after{
+ul.open2 li:nth-of-type(12) a, nav > ul li:nth-of-type(12)::after{
     transition: opacity 7.1s, color .5s;
 }
 
-/* Nav items (bovenkant pagina) */
-div#navDesktop{
+/* Nav items (desktop) */
+nav > div:nth-of-type(1){
     display: flex;
     height: 100%;
 }
 
-ul#navItems2{
+nav > div:nth-of-type(1) ul{
     display: none;
     list-style: none;
     gap: 20px;
@@ -222,31 +226,48 @@ ul#navItems2{
     height: 100%;
 }
 
-ul#navItems2 li{
+nav > div:nth-of-type(1) ul li{
     white-space: nowrap;
 }
 
-ul#navItems2 li a{
+nav > div:nth-of-type(1) ul li a{
     color: white;
     text-decoration: none;
+    position: relative;
+    font-size: .98em;
+}
+
+nav > div:nth-of-type(1) ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -.1em;
+    left: 0;
+    background-color: white;
+    height: .07em;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .2s ease-in-out;
+}
+
+nav > div:nth-of-type(1) ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
 /* Main content */
-main section.contentSection{
+main section{
     height: calc(100vh - 3em);
     width: 100vw;
     overflow: hidden;
     position: relative;
 }
 
-main section.contentSection:nth-of-type(1){
+main section:nth-of-type(1){
     height: 100vh;
 }
 
-/* main section img{
-    height: 100%;
-} */
 main section{
     background-position: center;
     background-size: cover;
@@ -268,7 +289,7 @@ main section:nth-of-type(4){
     background-image: url(../images/img4.png);
 }
 
-div.containerContent{
+main section > div{
     position: absolute;
     margin-right: 1.125em;
     bottom: 7em;
@@ -279,8 +300,7 @@ h1, h2{
     font-family: d-din-bold;
     font-size: 2.25em;
     color: white;
-    font-weight: 100;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
     text-shadow: 0 0 2px #555;
     line-height: 1em;
 }
@@ -288,10 +308,9 @@ h1, h2{
 h3{
     font-size: 1em;
     color: white;
-    font-weight: 100;
 }
 
-a.button{
+main section a{
     padding: 1.125em 3.44em 1.125em 3.44em;
     background-color: transparent;
     border: 2px solid white;
@@ -302,29 +321,74 @@ a.button{
     font-size: 1em;
 }
 
-a.button:hover{
+main section a:hover{
     box-shadow: inset 0 -55px 0 0 white;
     transition: .3s ease-in-out; 
     color: black;
 }
 
 
+/* Footer */
+footer img{
+    width: 6em;
+    margin: 0 auto;
+    padding: 2em 0 1em 0;
+    display: block;
+}
+
+footer{
+    width: 100vw;
+    height: 8em;
+    background-color: black;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    margin: 0 .7em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: darkgrey;
+    transition: color .5s;
+}
+
+
+
+
+
+
+
+
+
+
 /* Breakpoint fixes*/
 @media (min-width: 600px) {
-    nav div#containerHamburger{
+    nav > button{
         right: 3em;
     }
-    ul#navItems li{
-        margin-right: 2.6em;
+    nav > ul li{
+        margin-right: 2em;
     }
-    ul#navItems li::after{
+    nav > ul li::after{
         width: 14em;
     }
-    main div.containerContent{
+    main section > div{
         width: 40vw;
     }
-    main section.contentSection:nth-of-type(3) div{
+    main section:nth-of-type(3) div{
         width: 18.75em;
+    }
+    main section:nth-of-type(1){
+        background-image: url(../images/img1Desktop.png);
     }
 }
 
@@ -337,67 +401,89 @@ a.button:hover{
     header{
         height: 3em;
     }
-    nav ul#navItems2{
+    main section{
+        height: calc(100vh - 3.2em);
+    }
+    nav > div:nth-of-type(1) ul{
         display: flex;
     }
-    nav ul#navItems2 li:nth-of-type(7){
+    nav > div:nth-of-type(1) ul li:nth-of-type(7){
         display: none;
     }
-    nav ul#navItems2 li:nth-of-type(8){
+    nav > div:nth-of-type(1) ul li:nth-of-type(8){
         display: none;
     }
-    nav div#containerHamburger{
-        top: .9em;
+    nav > button{
+        top: 1.1em;
     }
-    ul#navItems{
+    nav > ul{
         margin-top: -0.05em;
     }
-    ul#navItems li:nth-of-type(-n+6){
+    nav > ul li:nth-of-type(-n+6){
         display: none;
     }
-    ul#navItems.open2 li:nth-of-type(7) a, ul#navItems li:nth-of-type(7)::after{
+    nav > ul.open2 li:nth-of-type(7) a, nav > ul li:nth-of-type(7)::after{
         transition: opacity 2.5s, color .5s;
     }
-    ul#navItems.open2 li:nth-of-type(8) a, ul#navItems li:nth-of-type(8)::after{
+    nav > ul.open2 li:nth-of-type(8) a, nav > ul li:nth-of-type(8)::after{
         transition: opacity 2.8s, color .5s;
     }
     
-    ul#navItems.open2 li:nth-of-type(9) a, ul#navItems li:nth-of-type(9)::after{
+    nav > ul.open2 li:nth-of-type(9) a, nav > ul li:nth-of-type(9)::after{
         transition: opacity 3.1s, color .5s;
     }
     
-    ul#navItems.open2 li:nth-of-type(10) a, ul#navItems li:nth-of-type(10)::after{
+    nav > ul.open2 li:nth-of-type(10) a, nav > ul li:nth-of-type(10)::after{
         transition: opacity 3.4s, color .5s;
     }
     
-    ul#navItems.open2 li:nth-of-type(11) a, ul#navItems li:nth-of-type(11)::after{
+    nav > ul.open2 li:nth-of-type(11) a, nav > ul li:nth-of-type(11)::after{
         transition: opacity 3.7s, color .5s;
     }
     
-    ul#navItems.open2 li:nth-of-type(12) a, ul#navItems li:nth-of-type(12)::after{
+    nav > ul.open2 li:nth-of-type(12) a, nav > ul li:nth-of-type(12)::after{
         transition: opacity 4.0s, color .5s;
     }
-    main section.contentSection:nth-of-type(3) div{
+    main section:nth-of-type(3) div{
         width: 40vw;
+    }
+    nav > div:first-of-type > a{
+        margin: 0;
+    }
+    main section > div{
+        left: 3em;
+    }
+    footer{
+        height: 5em;
+    }
+    footer > div{
+        display: flex;
+        justify-content: center;
+    }
+    footer > div ul{
+        margin: 1.9em 0 0 1em;
+    }
+    footer img{
+        margin: 0;
     }
 }
 
 @media (min-width: 1080px){
-    nav ul#navItems2 li:nth-of-type(7){
+    nav > div:nth-of-type(1) ul li:nth-of-type(7){
         display: block;
         position: absolute;
         right: 5.3em;
     }
-    ul#navItems li:last-of-type{
+    nav > ul li:last-of-type{
         display: none;
     }
 }
 
 @media (min-width: 1200px){
-    nav ul#navItems2 li:nth-of-type(8){
+    nav > div:nth-of-type(1) ul li:nth-of-type(8){
         display: block;
     }
-   ul#navItems li:nth-of-type(7){
+   nav > ul li:nth-of-type(7){
        display: none;
    }
 }
