@@ -41,12 +41,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   SpaceX - Home
   
-  <img width="350" src="https://user-images.githubusercontent.com/74242736/202444714-a50f7630-8924-4a29-bbc7-8d57f188f6fb.png">
+  <img width="200" alt="mobiel1" src="https://user-images.githubusercontent.com/74242736/205944736-394731b3-5cf9-477b-9383-a00f12bdf773.png">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  SpaceX - Falcon 9  
+  SpaceX - Hakuto-R 
   
-  <img width="350" src="https://user-images.githubusercontent.com/74242736/202559782-42f048cc-e44c-4b6e-a854-8222b957edb4.png">
+  <img width="200" alt="mobiel3 cancelled" src="https://user-images.githubusercontent.com/74242736/205944884-56034a61-3db3-4634-b861-8507a91739b4.png">
+  
+  #### Screenshot(s) van de derde pagina (small screen):
+  SpaceX - Falcon 9 
+ 
+  <img width="200" alt="mobiel3 cancelled" src="https://user-images.githubusercontent.com/74242736/205945276-588660d4-f718-42aa-8df1-fb9beb8dcdc9.png">   
  
 </details>
 
@@ -106,14 +111,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### De gehele pagina:
+<img width="200" alt="Schermafbeelding 2022-12-06 om 16 33 24" src="https://user-images.githubusercontent.com/74242736/205954936-c5701ca9-df8a-456b-815e-07c88fed022f.png">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  ### dynamisch deel (menu): 
+<img width="200" alt="Schermafbeelding 2022-12-06 om 16 27 16" src="https://user-images.githubusercontent.com/74242736/205953420-f9b22e85-6737-47ee-9482-7902f6a6c3f3.png">
+
 
 </details>
 
@@ -131,22 +136,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | idelene        | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
-  | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  - Hamburger menu
+  - HTML checken
+  - Nummers optellen animatie
+  - Afbeeldingen postioneren
+  - Carousel
+    
+  | Joep                       | Sten               | Michelle                    | student 4        |
+  | ---                      | ---                | ---                           | ---              |
+  | Nummers optellen animatie| HTML checken        | Afbeeldingen positioneren    | en dan ik dat    |
+  |                           | Carousel           | Hamburger menu               | dit wil ik zeker |
+  |                           |                   |                                |             |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Sten heeft een idee hoe het carousel moet en gaat er mee door.
+  - Michelle alle HTML gecheckt, en ::before gebruiken.
+  - Mag geen classes en id gebruiken
+  - h1 boven aan website, h2 daarna enzovoort. (met css positie omwissenel flexbox: order;)
 
 </details>
 
@@ -236,6 +245,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
+  
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
