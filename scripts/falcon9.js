@@ -48,27 +48,68 @@ const interval3 = setInterval(() => {
 
 
 
-// Scrollbased nummer animatie 
-// function scrollAnimatie(){
-//     const item = document.querySelectorAll('.test')
-//     item.forEach(element =>{
-//         const windowHeight = window.innerHeight;
-//         const elementTop = element.getBoundingClientRect().top;
-//         const elementVisible = 50;
-//         if (elementTop < windowHeight - elementVisible) {
-//             element.classList.add("scroll");
-//         } 
-//         else {
-//             element.classList.remove("scroll");
-//       }
-//     })
-// }
 
-// window.addEventListener("scroll", scrollAnimatie);
+
+
+
+// Scrollbased nummer animatie 
+function scrollAnimatie(){
+    const nummerContainer = document.querySelectorAll('main section:nth-of-type(2) div')
+    nummerContainer.forEach(element =>{
+        let windowHeight = window.innerHeight;
+        let elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 50;
+        if (elementTop < windowHeight - elementVisible) {
+            element.classList.add("scroll");
+
+            // const interval3 = setInterval(() => {
+            //     reflights += 1
+            //     document.querySelector('main section:nth-of-type(2) div:nth-of-type(3) h3').textContent = reflights
+            //     if(reflights == 123){
+            //         clearInterval(interval3)
+            //     }
+            // }, 10)
+
+        } 
+        else {
+            element.classList.remove("scroll");
+      }
+    })
+}
+
+window.addEventListener("scroll", scrollAnimatie);
 
 // To check the scroll position on page load
-// scrollAnimatie();
+scrollAnimatie();
 
+
+
+
+
+
+
+
+
+
+// Change img on scroll animatie
+function scrollAnimatieImg(){
+    const backgroundImg = document.querySelector('section:nth-of-type(3) div:nth-of-type(1)')
+    const overviewDiv = document.querySelector('section:nth-of-type(3) div:nth-of-type(2)')
+    let windowHeight = window.innerHeight;
+    let elementTop = overviewDiv.getBoundingClientRect().top;       
+    const elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+        backgroundImg.classList.add("newImg");
+    } 
+    else {
+        backgroundImg.classList.remove("newImg");
+    }
+}
+
+window.addEventListener("scroll", scrollAnimatieImg);
+
+// To check the scroll position on page load
+scrollAnimatieImg();
 
 
 

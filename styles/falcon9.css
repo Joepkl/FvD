@@ -58,7 +58,7 @@ nav > button{
 nav > button div{
     position: relative;
     width: 1.2em;
-    /* height: 0.75em; */
+    height: 0.8em;
     margin-left: auto;
     cursor: pointer;
     z-index: 999;
@@ -332,9 +332,9 @@ main section:nth-of-type(3){
 }
 
 main section:nth-of-type(3) div:nth-of-type(1){
-    background-image: url(../images/WebsiteF9Fairings.webp);
+    background-image: linear-gradient(to top, transparent 85%, black ), url(../images/falcon9skelet.png);
     background-size: cover;
-    background-position-x: 30%;
+    background-position-x: 40%;
     height: 40%;
     position: sticky;
     top: 3em;
@@ -352,22 +352,23 @@ main section:nth-of-type(3) > p:first-of-type{
 /* Falcon 9 overview list */
 main section:nth-of-type(3) > p:nth-of-type(2){
     position: absolute;
-    top: 50em;
+    bottom: 15em;
     left: 1.3em;
     font-size: 1.3em;
 }
 
 h4{
     font-size: 2em;
+    font-family: d-din-bold;
     color: white;
     position: absolute;
-    top: 33.3em;
+    bottom: 8.7em;
     left: .8em;
 }
 
 main section:nth-of-type(3) div:nth-of-type(2){
     position: absolute;
-    top: 71em;
+    bottom: 3em;
     left: 1.8em;
     display: flex;
     width: calc(100vw - 3.5em);
@@ -404,31 +405,41 @@ main section:nth-of-type(3) ul:nth-of-type(2){
 }
 
 main section:nth-of-type(3) button{
+    width: fit-content;
     position: absolute;
     font-family: d-din-bold;
     font-size: 1.5em;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 main section:nth-of-type(3) button:first-of-type{
-    top: 44.5em;
+    bottom: 11.5em;
     right: 2.3em;
     color: #252525;
 }
 
 main section:nth-of-type(3) button:nth-of-type(2){
-    top: 44.5em;
+    bottom: 11.5em;
     right: 1.3em;
     color: white;
 }
 
 
+/* Image verandering on scroll falon 9 */
+main section:nth-of-type(3) div:nth-of-type(1).newImg{
+    background-image: url(../images/falcon9render.png);
+}
+
+
 /* Video falcon 9 */
-main section:nth-of-type(4) iframe{
+iframe{
     width: 100%;
     height: calc(100vh - 3em);
 }
+
+
 
 
 
@@ -570,16 +581,43 @@ footer a:hover{
 /* Breakpoint fixes Falcon 9 */
 @media (min-width: 960px){
     main section:nth-of-type(3) {
-        height: 175vh;
+        height: 170vh;
     }
-    main section:nth-of-type(3) div:nth-of-type(2), main section:nth-of-type(3) ul:first-of-type li::after{
-        width: calc(50vw - 3.5em);
+    main section:nth-of-type(3) div:nth-of-type(2){
+        width: 31em;
+        left: 3em;
+        bottom: 11em;
+    }
+    main section:nth-of-type(3) ul:first-of-type li::after{
+        width: 31em;
     }
     main section:nth-of-type(3) div:nth-of-type(1){
-        background-position-x: 10%;
+        background-position-x: 0%;
         height: 60%;
+        top: 1em;
+    }
+    main section:nth-of-type(3) button:first-of-type{
+        left: 21.2em;
+        bottom: 16.1em;
+    }
+    main section:nth-of-type(3) button:nth-of-type(2){
+        left: 22.2em;
+        bottom: 16.1em;
+    }
+    main section:nth-of-type(3) > p:first-of-type {
+        width: 40vw;
+        margin-left: 3em;
+    }
+    main section:nth-of-type(3) > p:nth-of-type(2){
+        left: 2.2em;
+        bottom: 20em;
+    }
+    h4{
+        left: 1.4em;
+        bottom: 12em;
     }
 }
+
 
 @media (min-width: 1080px){
     nav > div:nth-of-type(1) ul li:nth-of-type(7){
