@@ -137,11 +137,12 @@ nav > ul li:nth-of-type(1){
 
 nav > ul li{
     list-style: none;
-    width: fit-content;
+    width: 100%;
     margin-right: .5em;
     margin-top: 1.5em;
     white-space: nowrap;
     position: relative;
+    text-align: right;
 }
 
 nav > ul li::after{
