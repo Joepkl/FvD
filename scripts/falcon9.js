@@ -73,10 +73,21 @@ const interval3 = setInterval(() => {
 
 
 
+
+
 // Change img on scroll animatie
 function scrollAnimatieImg(){
     const backgroundImg = document.querySelector('section:nth-of-type(3) div:nth-of-type(1)')
-    const overviewDiv = document.querySelector('section:nth-of-type(3) div:last-of-type:not(.none)')
+    
+    const overviewDiv = document.querySelector('section:nth-of-type(3) div:not(:first-of-type):not(.none)')
+   
+    // const overviewDiv = document.querySelector('main section:nth-of-type(3) div:nth-of-type(2)')
+    // if(overviewDiv.classList.contains('none')){
+    //     console.log('werkt')
+    //     const overviewDiv = document.querySelector('main section:nth-of-type(3) div:nth-of-type(3)')
+    // }
+
+
     let windowHeight = window.innerHeight;
     let elementTop = overviewDiv.getBoundingClientRect().top;       
     const elementVisible = 150;

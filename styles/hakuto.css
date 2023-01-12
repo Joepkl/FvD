@@ -52,7 +52,7 @@ button{
 nav button{
     position: absolute;
     right: 1.3em;
-    top: 0.8em;
+    top: .55em;
     background-color: transparent;
     border: none;
 }

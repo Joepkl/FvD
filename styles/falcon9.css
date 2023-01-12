@@ -62,7 +62,7 @@ button{
 nav > button{
     position: absolute;
     right: 1.3em;
-    top: 0.8em;
+    top: .55em;
     background-color: transparent;
     border: none;
 }
@@ -565,6 +565,7 @@ main section:nth-of-type(4) div:nth-of-type(2){
     display: flex;
     width: calc(100vw - 3.5em);
     margin-left: 1.8em;
+    padding-bottom: 3em;
 }
 
 main section:nth-of-type(4) div ul{
@@ -605,6 +606,30 @@ main section:nth-of-type(4) ul button.active{
 
 
 
+/* Carousel foto's */
+
+/* main section:nth-of-type(5){
+    background-image: url(../images/carousel1.png);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+main section:nth-of-type(5){
+    width: 100vw;
+    overflow: hidden;
+}
+
+main section:nth-of-type(5) img{
+    height: 80vh;
+}
+
+/* main section:nth-of-type(5) img{
+    object-fit: cover;
+    object-position: center;
+    height: 80vh;
+} */
 
 
 
