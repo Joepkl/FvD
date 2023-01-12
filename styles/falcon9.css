@@ -55,6 +55,10 @@ nav a img{
 }
 
 /* Hamburger menu */
+button{
+    font-size: 1em;
+}
+
 nav > button{
     position: absolute;
     right: 1.3em;
