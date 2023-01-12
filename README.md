@@ -245,11 +245,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   
-  | student 1      | student 2          | student 3    | 
+  | Joep     | Michelle          | Sten    | 
   | ---            | ---                | ---          | 
-  | dit bespreken  | en dit             | en ik dit    |
-  | en dat ook nog | dit als er tijd is | nog een punt | 
-  | ...            | ...                | ...          | 
+  | Overscroll Falcon 9 op mobiel | en dit             | en ik dit    |
+  |  Nav uitlijnen rechts, after breedte op mobiel| dit als er tijd is | nog een punt | 
+  |          | ...                | ...          | 
 
 
   ### Verslag van meeting
