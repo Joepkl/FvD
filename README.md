@@ -255,10 +255,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Index pagina H1 als eerst, daarna H2. (niks overslaan)
+  - In de nav active state als je een pagina bezoekt
+  - Headings 186 enz weghalen (geen belangrijke info) (titels alleen voor belangrijke content)
+  - Div in header en footer weghalen
 
 </details>
 
