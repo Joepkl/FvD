@@ -78,16 +78,7 @@ const interval3 = setInterval(() => {
 // Change img on scroll animatie
 function scrollAnimatieImg(){
     const backgroundImg = document.querySelector('section:nth-of-type(3) div:nth-of-type(1)')
-    
     const overviewDiv = document.querySelector('section:nth-of-type(3) div:not(:first-of-type):not(.none)')
-   
-    // const overviewDiv = document.querySelector('main section:nth-of-type(3) div:nth-of-type(2)')
-    // if(overviewDiv.classList.contains('none')){
-    //     console.log('werkt')
-    //     const overviewDiv = document.querySelector('main section:nth-of-type(3) div:nth-of-type(3)')
-    // }
-
-
     let windowHeight = window.innerHeight;
     let elementTop = overviewDiv.getBoundingClientRect().top;       
     const elementVisible = 150;
@@ -202,9 +193,10 @@ buttonLandinglegs.addEventListener('click', landinglegs)
 
 
 //Falcon 9 first Merlin carousel
-const contentMerlin = document.querySelector('main section:nth-of-type(4) p:nth-of-type(2)')
+let contentMerlin = document.querySelector('main section:nth-of-type(4) p:nth-of-type(2)')
 const sealevelButton = document.querySelector('main section:nth-of-type(4) li:nth-of-type(1) button')
 const vaccuumButton = document.querySelector('main section:nth-of-type(4) li:nth-of-type(2) button')
+let imgMerlin = document.querySelector('main section:nth-of-type(4) img')
 
 function active2(){
     sealevelButton.classList.add('active')
@@ -216,15 +208,14 @@ function content1(){
     contentMerlin.textContent = 'Merlin is a family of rocket engines developed by SpaceX for use on its Falcon 1, Falcon 9 and Falcon Heavy launch vehicles. Merlin engines use a rocket grade kerosene (RP-1) and liquid oxygen as rocket propellants in a gas-generator power cycle. The Merlin engine was originally designed for recovery and reuse.'
     sealevelButton.classList.add('active')
     vaccuumButton.classList.remove('active')
-
+    imgMerlin.src = './images/merlin.png'
 }
 
 function content2(){
     contentMerlin.textContent = 'Merlin Vacuum features a larger exhaust section and a significantly larger expansion nozzle to maximize the engine’s efficiency in the vacuum of space. Its combustion chamber is regeneratively cooled, while the expansion nozzle is radiatively cooled. At full power, the Merlin Vacuum engine operates with the greatest efficiency ever for an American-made hydrocarbon rocket engine.'
     vaccuumButton.classList.add('active')
     sealevelButton.classList.remove('active')
-
-
+    imgMerlin.src = './images/merlin2.jpeg'
 }
 
 sealevelButton.addEventListener('click', content1)

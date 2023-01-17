@@ -175,6 +175,7 @@ nav > ul.open2{
 }
 
 
+
 /* Nav sidebar verschijnen animatie*/
 ul.open2 li a, ul.open2 li::after{
     opacity: .8;
@@ -519,13 +520,10 @@ iframe{
 
 
 /* Merlin section */
-main section:nth-of-type(4) > div:first-of-type{
+main section:nth-of-type(4) img{
     width: 100vw;
-    background-image: url(../images/merlin.png);
-    background-size: cover;
-    background-position-x: 50%;
     height: 35em;
-    top: 3em;
+    object-fit: cover;
 }
 
 main section:nth-of-type(4) > p:first-of-type{
@@ -562,7 +560,7 @@ main section:nth-of-type(4) p:nth-of-type(2){
 }
 
 
-main section:nth-of-type(4) div:nth-of-type(2){
+main section:nth-of-type(4) div:nth-of-type(1){
     display: flex;
     width: calc(100vw - 3.5em);
     margin-left: 1.8em;
@@ -608,29 +606,17 @@ main section:nth-of-type(4) ul button.active{
 
 
 /* Carousel foto's */
-
-/* main section:nth-of-type(5){
-    background-image: url(../images/carousel1.png);
-    height: 80vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 main section:nth-of-type(5){
     width: 100vw;
-    overflow: hidden;
 }
 
 main section:nth-of-type(5) img{
     height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center 0;
 }
 
-/* main section:nth-of-type(5) img{
-    object-fit: cover;
-    object-position: center;
-    height: 80vh;
-} */
 
 
 
@@ -810,6 +796,36 @@ footer a:hover{
     section:nth-of-type(3) h4{
         left: 1.4em;
         bottom: 12em;
+    }
+    main section:nth-of-type(3) div:nth-of-type(3){
+        bottom: 12em;
+        left: 3em;
+        width: 31em;
+    }
+    main section:nth-of-type(4) p:nth-of-type(2), main section:nth-of-type(4) div:nth-of-type(1){
+        width: 31em;
+        left: 1.2em;
+    }
+    main section:nth-of-type(4) div ul:first-of-type li::after{
+        left: 0;
+        width: 31em;
+    }
+    main section:nth-of-type(4) img{
+        height: 50em;
+        object-position: 30% 0;
+    }
+    main section:nth-of-type(4) > p:first-of-type{
+        margin-top: -30em;
+        margin-left: 2.3em;
+    }
+    main section:nth-of-type(4) h4{
+        margin-left: 1.45em;
+    }
+    main section:nth-of-type(4) > ul:first-of-type, main section:nth-of-type(4) p:nth-of-type(2), main section:nth-of-type(4) div:nth-of-type(1){
+        margin-left: 3em;
+    }
+    main section:nth-of-type(4) div:nth-of-type(1){
+        margin-bottom: 10em;
     }
 }
 
