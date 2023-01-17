@@ -207,10 +207,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - Navigeren door home pagina en hakuto-r pagina gaat duidelijk.
+  - Hamburger menu openen lukt niet met toetsenbord.
+  - Falcon 9 pagina moeten de headings bij launches, landings en reflights aangepast (eerst titel voorlezen en dan aantal).
+ 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
@@ -218,13 +224,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Het is mogelijk om de website te gebruiken.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - Voor kleurenblinde gebruikers is er genoeg contrast, omdat er voornamelijk zwart en wit wordt gebruikt in de website.
+  - Dark en light modus a.d.h.v. gebruikers voorkeuren moet nog worden gemaakt
+  - Contrast modus zou leuk zijn, maar is waarschijnlijk geen tijd voor.
 
 </details>
 
