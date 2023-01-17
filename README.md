@@ -204,9 +204,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ 
+  - Screenreader gaat duidelijk door de pagina's heen. 
+  - Hamburger menu openen met enter/option lukt niet.
+  - Falcon 9 pagina moeten de headings bij launches, landings en reflights aangepast (eerst titel voorlezen en dan aantal).
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
   
   
 
@@ -214,8 +216,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Muis en Toetsenbord 
   
   - Navigeren door home pagina en hakuto-r pagina gaat duidelijk.
-  - Hamburger menu openen lukt niet met toetsenbord.
-  - Falcon 9 pagina moeten de headings bij launches, landings en reflights aangepast (eerst titel voorlezen en dan aantal).
+  - Verder wordt het menu nu geopend wanneer je door de elementen heen gaat. (Doormiddel van :focus-within)
+  
  
 
 
