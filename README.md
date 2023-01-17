@@ -218,11 +218,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Falcon 9 pagina moeten de headings bij launches, landings en reflights aangepast (eerst titel voorlezen en dan aantal).
  
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
 
   - Het is mogelijk om de website te gebruiken.
 
@@ -230,7 +227,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   
   - Voor kleurenblinde gebruikers is er genoeg contrast, omdat er voornamelijk zwart en wit wordt gebruikt in de website.
-  - Dark en light modus a.d.h.v. gebruikers voorkeuren moet nog worden gemaakt
+  - Dark en light modus a.d.h.v. gebruikers voorkeuren moet nog worden gemaakt. 
   - Contrast modus zou leuk zijn, maar is waarschijnlijk geen tijd voor.
 
 </details>
