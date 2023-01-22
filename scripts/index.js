@@ -1,5 +1,5 @@
 // Navigatie interactie
-const hamburgerMenu = document.querySelector('nav > button div')
+const hamburgerMenu = document.querySelector('nav > button')
 const navItems = document.querySelector('nav > ul')
 
 hamburgerMenu.addEventListener('click', openMenu)

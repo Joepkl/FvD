@@ -1,5 +1,5 @@
 // Navigatie interactie
-const hamburgerMenu = document.querySelector('nav > button div')
+const hamburgerMenu = document.querySelector('nav > button')
 const navItems = document.querySelector('nav > ul')
 
 hamburgerMenu.addEventListener('click', openMenu)
@@ -16,7 +16,7 @@ let launches = 0
 
 const interval1 = setInterval(() => {
     launches += 1
-    document.querySelector('main section:nth-of-type(2) div:first-of-type h3').textContent = launches
+    document.querySelector('main section:nth-of-type(2) div:first-of-type p').textContent = launches
     if(launches == 186){
         clearInterval(interval1)
     }
@@ -28,7 +28,7 @@ let landings = 0
 
 const interval2 = setInterval(() => {
     landings += 1
-    document.querySelector('main section:nth-of-type(2) div:nth-of-type(2) h3').textContent = landings
+    document.querySelector('main section:nth-of-type(2) div:nth-of-type(2) p').textContent = landings
     if(landings == 144){
         clearInterval(interval2)
     }
@@ -40,7 +40,7 @@ let reflights = 0
 
 const interval3 = setInterval(() => {
     reflights += 1
-    document.querySelector('main section:nth-of-type(2) div:nth-of-type(3) h3').textContent = reflights
+    document.querySelector('main section:nth-of-type(2) div:nth-of-type(3) p').textContent = reflights
     if(reflights == 123){
         clearInterval(interval3)
     }
@@ -50,7 +50,7 @@ const interval3 = setInterval(() => {
 
 
 
-// Scrollbased nummer animatie 
+// Scrollbased nummer animatie INTERSECTION OBSERVER
 // function createObserver() {
 //     let observer;
   
@@ -220,5 +220,91 @@ function content2(){
 
 sealevelButton.addEventListener('click', content1)
 vaccuumButton.addEventListener('click', content2)
+
+
+
+
+
+
+
+
+
+
+
+//Falcon 9 IMG carousel with buttons
+let carrouselElementsContainer = document.querySelector("main section:nth-of-type(5) ul")
+let carrouselElements = carrouselElementsContainer.querySelectorAll("li")
+let linkButtons = document.querySelectorAll("main section:nth-of-type(5) div a")
+
+
+// de links/rechts link-buttons initialiseren en activeren
+function iniLinkButtons(){
+    linkButtons.forEach((button) => {
+        button.addEventListener('click', function(e){
+            e.preventDefault()
+            let direction = this.getAttribute("href")
+            goToElement(direction)
+        })
+    })
+}
+
+
+// het eerste element actief maken
+function iniStartPosition() {
+    carrouselElements[0].classList.add("current")
+    carrouselElementsContainer.scrollLeft = 0
+}
+
+
+// naar volgende/vorige element //
+function goToElement(direction) {
+    let currentElement = document.querySelector(".current")
+
+    let newElement
+    if (direction == "previous") {
+        newElement = currentElement.previousElementSibling;
+        if (!newElement) {
+            newElement = carrouselElementsContainer.querySelector("li:last-of-type");
+        }
+    } 
+    else {
+        newElement = currentElement.nextElementSibling;
+        if (!newElement) {
+            newElement = carrouselElementsContainer.querySelector("li:first-of-type");
+        }
+    }
+
+    // naar het nieuwe element scrollen
+    scrollToElement(newElement);
+}
+
+
+
+function scrollToElement(newElement) {
+    let carouselElementsContainer = newElement.closest("ul");
+	let newElementOffset = newElement.offsetLeft
+	
+    carouselElementsContainer.scrollTo({
+		left: newElementOffset
+	})
+    // nieuwe element current element maken
+    updateCurrentElement(newElement);
+}
+
+
+function updateCurrentElement(newElement) {
+    // het huidige current element opzoeken en veranderen
+    let currentElement = carrouselElementsContainer.querySelector(".current");
+    currentElement.classList.remove("current");
+    newElement.classList.add("current");
+
+    let imgTitel = document.querySelector('main section:nth-of-type(5) p')
+    imgTitel.textContent = newElement.querySelector('img').getAttribute('alt')
+}
+
+iniLinkButtons();	
+iniStartPosition();
+
+
 
 

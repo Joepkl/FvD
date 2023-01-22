@@ -54,6 +54,35 @@ nav a img{
     transform: translateX(4vw);
 }
 
+
+
+/* Focus state navigatie en footer*/
+nav a, footer a, nav button{
+    outline: none;
+}
+
+nav a:focus, footer a:focus{
+    border-bottom: .07em solid var(--button-color);
+}
+
+nav div > a:focus, nav button:focus{
+    outline: .07em dotted var(--button-color);
+    border-bottom: none;
+}   
+
+
+/* Focus state content index */
+main a{
+    outline: none;
+}
+
+main a:focus{
+    outline: .1em dotted var(--button-color);
+}
+
+
+
+
 /* Hamburger menu */
 button{
     font-size: 1em;
@@ -98,17 +127,17 @@ nav > button div span:nth-of-type(3){
 }
 
 /* Open menu animatie */
-nav > button div.open span:nth-of-type(2){
+nav > button.open div span:nth-of-type(2){
     opacity: 0;
 }
 
-nav > button div.open span:nth-of-type(1){
+nav > button.open div span:nth-of-type(1){
     transform: rotate(45deg);
     transform-origin: left center;
     top: -0.15em;
 }
 
-nav > button div.open span:nth-of-type(3){
+nav > button.open div span:nth-of-type(3){
     transform: rotate(-45deg);
     transform-origin: left center;
     top: 0.7em;
@@ -165,62 +194,92 @@ nav > ul li a:hover{
     color: var(--hover-color);
 }
 
-nav > ul.open2{
+nav > ul.open2,
+nav > ul:focus-within {
     width: 20em;
     transition: .5s;
     z-index: 99;
 }
 
+
+
 /* Nav sidebar verschijnen animatie*/
-ul.open2 li a, ul.open2 li::after{
+ul.open2 li a, 
+ul.open2 li::after,
+ul:focus-within li a, 
+ul:focus-within li::after {
     opacity: .8;
 }
 
-ul.open2 li:nth-of-type(1) a, nav > ul li:nth-of-type(1)::after{
+ul.open2 li:nth-of-type(1) a, 
+ul:focus-within li:nth-of-type(1) a,
+nav > ul li:nth-of-type(1)::after{
     transition: opacity 2.5s, color .5s;
 }
 
-ul.open2 li:nth-of-type(2) a, nav > ul li:nth-of-type(2)::after{
+ul.open2 li:nth-of-type(2) a, 
+ul:focus-within li:nth-of-type(2) a,
+nav > ul li:nth-of-type(2)::after{
     transition: opacity 2.9s, color .5s;
 }
 
-ul.open2 li:nth-of-type(3) a, nav > ul li:nth-of-type(3)::after{
+ul.open2 li:nth-of-type(3) a, 
+ul:focus-within li:nth-of-type(3) a,
+nav > ul li:nth-of-type(3)::after{
     transition: opacity 3.4s, color .5s;
 }
 
-ul.open2 li:nth-of-type(4) a, nav > ul li:nth-of-type(4)::after{
+ul.open2 li:nth-of-type(4) a, 
+ul:focus-within li:nth-of-type(4) a,
+nav > ul li:nth-of-type(4)::after{
     transition: opacity 3.8s, color .5s;
 }
 
-ul.open2 li:nth-of-type(5) a, nav > ul li:nth-of-type(5)::after{
+ul.open2 li:nth-of-type(5) a, 
+ul:focus-within li:nth-of-type(5) a, 
+nav > ul li:nth-of-type(5)::after{
     transition: opacity 4.2s, color .5s;
 }
 
-ul.open2 li:nth-of-type(6) a, nav > ul li:nth-of-type(6)::after{
+ul.open2 li:nth-of-type(6) a, 
+ul:focus-within li:nth-of-type(6) a, 
+nav > ul li:nth-of-type(6)::after{
     transition: opacity 4.6s, color .5s;
 }
 
-ul.open2 li:nth-of-type(7) a, nav > ul li:nth-of-type(7)::after{
+ul.open2 li:nth-of-type(7) a, 
+ul:focus-within li:nth-of-type(7) a, 
+nav > ul li:nth-of-type(7)::after{
     transition: opacity 5s, color .5s;
 }
 
-ul.open2 li:nth-of-type(8) a, nav > ul li:nth-of-type(8)::after{
+ul.open2 li:nth-of-type(8) a, 
+ul:focus-within li:nth-of-type(8) a, 
+nav > ul li:nth-of-type(8)::after{
     transition: opacity 5.4s, color .5s;
 }
 
-ul.open2 li:nth-of-type(9) a, nav > ul li:nth-of-type(9)::after{
+ul.open2 li:nth-of-type(9) a,
+ul:focus-within li:nth-of-type(9) a,
+nav > ul li:nth-of-type(9)::after{
     transition: opacity 5.8s, color .5s;
 }
 
-ul.open2 li:nth-of-type(10) a, nav > ul li:nth-of-type(10)::after{
+ul.open2 li:nth-of-type(10) a,
+ul:focus-within li:nth-of-type(10) a,
+nav > ul li:nth-of-type(10)::after{
     transition: opacity 6.2s, color .5s;
 }
 
-ul.open2 li:nth-of-type(11) a, nav > ul li:nth-of-type(11)::after{
+ul.open2 li:nth-of-type(11) a, 
+ul:focus-within li:nth-of-type(11) a,
+nav > ul li:nth-of-type(11)::after{
     transition: opacity 6.6s, color .5s;
 }
 
-ul.open2 li:nth-of-type(12) a, nav > ul li:nth-of-type(12)::after{
+ul.open2 li:nth-of-type(12) a,
+ul:focus-within li:nth-of-type(12) a, 
+nav > ul li:nth-of-type(12)::after{
     transition: opacity 7.1s, color .5s;
 }
 
@@ -394,6 +453,26 @@ footer a:hover{
 
 
 
+
+/* Dark / light mode preferences */
+/* @media (prefers-color-scheme: light){
+    :root{
+        --bg-color: rgb(255,255,255);
+        --text-color: rgb(0, 0, 0);
+        --button-color: rgb(0, 0, 0);
+        --detail-color: #812727;
+        --hover-color: darkgrey;
+    }
+}  
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg-color: rgb(0,0,0);
+        --text-color: rgb(255, 255, 255);
+        --button-color: rgb(255, 255, 255);
+        --detail-color: #252525;
+        --hover-color: darkgrey;
+    }
+}  */
 
 
 
