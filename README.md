@@ -278,34 +278,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
+  <img width="999" alt="Schermafbeelding 2023-01-22 om 19 08 56" src="https://user-images.githubusercontent.com/74242736/213932453-f2e1b5d2-b0de-4721-b6ca-172e2a90c3c1.png">
+  
+  <img width="999" alt="Schermafbeelding 2023-01-22 om 19 07 40" src="https://user-images.githubusercontent.com/74242736/213932390-9e090e7c-d90d-4f69-acf2-4335adf67137.png">
+  
+  <img width="999" alt="Schermafbeelding 2023-01-22 om 19 09 31" src="https://user-images.githubusercontent.com/74242736/213932491-0f3a0e9f-2d98-4ac0-ae43-9b7a01a089f0.png">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Volledig responsive
+  - Scroll based animaties
+  - JS dom manipulation
+  - Img carousel
+  - Accesibility
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+    <img width="1439" alt="Schermafbeelding 2023-01-22 om 19 03 05" src="https://user-images.githubusercontent.com/74242736/213932202-ad4c0275-5153-4dd0-84e6-91e8ff9bc222.png">
+  
+  <img width="325" alt="Schermafbeelding 2023-01-22 om 19 04 40" src="https://user-images.githubusercontent.com/74242736/213932246-529de412-abb4-42c2-b7db-22a94dac5afe.png">
+
+<img width="325" alt="Schermafbeelding 2023-01-22 om 19 05 24" src="https://user-images.githubusercontent.com/74242736/213932277-9dc30f23-b2c3-4673-b6ca-296630612601.png">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  In dit project heb ik helaas geen tijd gehad voor de volgende dingen:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
-
-
+  - Intersection Observer toepassen
+  - Img carousel op (touch) swipen laten werken
 
 
 
-## Bronnenlijst
-
-<details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
-
-</details>
