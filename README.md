@@ -296,9 +296,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
     <img width="1439" alt="Schermafbeelding 2023-01-22 om 19 03 05" src="https://user-images.githubusercontent.com/74242736/213932202-ad4c0275-5153-4dd0-84e6-91e8ff9bc222.png">
   
-  <img width="800" alt="Schermafbeelding 2023-01-22 om 19 04 40" src="https://user-images.githubusercontent.com/74242736/213932246-529de412-abb4-42c2-b7db-22a94dac5afe.png">
+  <img width="400" alt="Schermafbeelding 2023-01-22 om 19 04 40" src="https://user-images.githubusercontent.com/74242736/213932246-529de412-abb4-42c2-b7db-22a94dac5afe.png">
 
-<img width="800" alt="Schermafbeelding 2023-01-22 om 19 05 24" src="https://user-images.githubusercontent.com/74242736/213932277-9dc30f23-b2c3-4673-b6ca-296630612601.png">
+<img width="400" alt="Schermafbeelding 2023-01-22 om 19 05 24" src="https://user-images.githubusercontent.com/74242736/213932277-9dc30f23-b2c3-4673-b6ca-296630612601.png">
 
 
   ### Dit was lastig/Is niet gelukt:
