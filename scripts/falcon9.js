@@ -12,63 +12,83 @@ function openMenu(){
 
 
 // Falcon 9 nummer animatie Launches
-let launches = 0
-
-const interval1 = setInterval(() => {
-    launches += 1
-    document.querySelector('main section:nth-of-type(2) div:first-of-type p').textContent = launches
-    if(launches == 186){
-        clearInterval(interval1)
-    }
-}, 10)
+function launchesAnimatie(){
+    let launches = 0
+    const interval1 = setInterval(() => {
+        launches += 1
+        document.querySelector('main section:nth-of-type(2) div:first-of-type p').textContent = launches
+        if(launches == 186){
+            clearInterval(interval1)
+        }
+    }, 10)
+}
 
 
 // Falcon 9 nummer animatie Landings
-let landings = 0
+function landingsAnimatie(){
+    let landings = 0
+    const interval2 = setInterval(() => {
+        landings += 1
+        document.querySelector('main section:nth-of-type(2) div:nth-of-type(2) p').textContent = landings
+        if(landings == 144){
+            clearInterval(interval2)
+        }
+    }, 10)
+}
 
-const interval2 = setInterval(() => {
-    landings += 1
-    document.querySelector('main section:nth-of-type(2) div:nth-of-type(2) p').textContent = landings
-    if(landings == 144){
-        clearInterval(interval2)
-    }
-}, 10)
+
 
 
 // Falcon 9 nummer animatie Reflights
-let reflights = 0
+function reflightsAnimatie(){
+    let reflights = 0
+    const interval3 = setInterval(() => {
+        reflights += 1
+        document.querySelector('main section:nth-of-type(2) div:nth-of-type(3) p').textContent = reflights
+        if(reflights == 123){
+            clearInterval(interval3)
+        }
+    }, 10)
+}
 
-const interval3 = setInterval(() => {
-    reflights += 1
-    document.querySelector('main section:nth-of-type(2) div:nth-of-type(3) p').textContent = reflights
-    if(reflights == 123){
-        clearInterval(interval3)
-    }
-}, 10)
+
+
+
 
 
 
 
 
 // Scrollbased nummer animatie INTERSECTION OBSERVER
-// function createObserver() {
-//     let observer;
+function createObserver() {
+    let options = {
+    //   root: document.querySelector('main section:nth-of-type(2) div:first-of-type'),
+    //   rootMargin: "0px",
+        threshold: 0.1
+    };
+
+    let observer;
+    const boxElement = document.querySelector('main section:nth-of-type(2) div:first-of-type')
   
-//     let options = {
-//       root: document.querySelector('main section:nth-of-type(2) div:first-of-type'),
-//       rootMargin: "0px",
-//       threshold: buildThresholdList()
-//     };
+    observer = new IntersectionObserver(callback, options);
+    observer.observe(boxElement);
+}
   
-//     observer = new IntersectionObserver(callback, options);
-//     observer.observe(boxElement);
-// }
-  
+createObserver()
+
+function callback(entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        reflightsAnimatie()
+        launchesAnimatie()
+        landingsAnimatie()
+      } else {
+        console.log('uit beeld')
+      }
+    });
+  }
 
 
-// function callback(){
-//     console.log('zichtbaar')
-// }
 
 
 
