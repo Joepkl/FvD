@@ -14,41 +14,31 @@ function openMenu(){
 
 
 
-
-// Scrollbased animatie INTERSECTION OBSERVER index pagina 
-function createObserver() {
+// Scrollbased nummer animatie INTERSECTION OBSERVER
+function createObserver2() {
     let options = {
-    //   root: null,
-    //   rootMargin: "0px",
+    //   root: document.querySelector('main section:nth-of-type(2) div:first-of-type'),
+        rootMargin: "50px",
         threshold: 0
     };
 
-    let observer
-    observer = new IntersectionObserver(callback, options)
-
-    const boxElement = document.querySelectorAll('main section div')
-
-    boxElement.forEach((element)=>{
-        observer.observe(element)
-    })
+    let observer;
+    const element = document.querySelector('main section:nth-of-type(2) p')
+  
+    observer = new IntersectionObserver(animatie, options);
+    observer.observe(element);
 }
   
-createObserver()
+createObserver2()
 
-function callback(entries) {
+function animatie(entries) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log('in beeld') 
+        console.log('in beeld')
         entry.target.classList.add('animatie')
       } else {
         console.log('uit beeld')
         entry.target.classList.remove('animatie')
       }
-    });
+    })
   }
-
-
-
-  
-  
-
